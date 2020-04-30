@@ -2,7 +2,7 @@
     <title>Welcome To Our Shopping Site</title>
    {{> style}}
 
-    <div class="wrapper wrapper-content" id="savea">
+   <div class="wrapper wrapper-content" id="savea">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="ibox">
@@ -12,11 +12,6 @@
                                 <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                     <h2>Product List</h2>
                                 </div>
-                                <!-- <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-		 	  	   	    	          			<div class="text-right">
-		 	  	   	    	          				 <a href="#" class="btn btn-primary btn-small" data-toggle="modal" data-target="#modal-new-asset">New Asset</a>
-		 	  	   	    	          			</div>
-		 	  	   	    	          	   </div> -->
                             </div>
 
                         </div>
@@ -32,12 +27,12 @@
                                                 <div class="row">
                                                     <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
                                                         <div class="image">
-                                                            <img src="{{constants}}/img/propertie-dtl-slider2.jpg" alt="">
+                                                            <img src="img/propertie-dtl-slider2.jpg" id="img1" alt="">
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                                         <div>
-                                                            <h3>Alice & Blue Brand Yellow Top</h3>
+                                                            <h3 id="productName1">Alice & Blue Brand Yellow Top</h3>
                                                         </div>
 
                                                         <div class="as-info clearfix">
@@ -56,7 +51,7 @@
 
 
                                                                 <input type="number" placeholder="quantity"
-                                                                    name='quantity' min=1 max=10 style="width:100px">
+                                                                    name='quantity' id="quantity1" min=1 max=10 style="width:100px">
                                                                 <h4>Sub Total</h4>
                                                                 <h2>$ 0</h2>
 
@@ -64,8 +59,8 @@
                                                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 ">
 
                                                                 <div class="text-right text-l">
-                                                                    <a href="view-order.html"
-                                                                        class="btn btn-default btn-small">Buy</a>
+                                                                    <a href="#"
+                                                                        class="btn btn-default btn-small" id="1" onclick="getDetails(this)">Buy</a>
                                                                 </div>
                                                                 <!-- <div
                                                                                                     class="text-right m-t-sm text-l">
@@ -96,12 +91,12 @@
                                                 <div class="row">
                                                     <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
                                                         <div class="image">
-                                                            <img src="{{constants}}/img/propertie-dtl-slider3.jpg" alt="">
+                                                            <img src="img/propertie-dtl-slider3.jpg" id="img2" alt="">
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                                         <div>
-                                                            <h3>Lee Cooper Jacket</h3>
+                                                            <h3 id="productName2">Lee Cooper Jacket</h3>
                                                         </div>
 
                                                         <div class="as-info clearfix">
@@ -119,7 +114,7 @@
                                                                 class="col-lg-6 col-md-6 col-sm-6 col-xs-12 border-right-a ">
 
 
-                                                                <input type="number" placeholder="quantity"
+                                                                <input type="number" placeholder="quantity" id="quantity2"
                                                                     name='quantity' min=1 max=10 style="width:100px">
                                                                 <h4>Sub Total</h4>
                                                                 <h2>$ 0</h2>
@@ -128,8 +123,8 @@
                                                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 ">
 
                                                                 <div class="text-right text-l">
-                                                                    <a href="view-order.html"
-                                                                        class="btn btn-default btn-small">Buy</a>
+                                                                    <a href="#"
+                                                                        class="btn btn-default btn-small" onclick="getDetails(this)">Buy</a>
                                                                 </div>
                                                                 <!-- <div
                                                                                                     class="text-right m-t-sm text-l">
@@ -160,12 +155,12 @@
                                                 <div class="row">
                                                     <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
                                                         <div class="image">
-                                                            <img src="{{constants}}/img/propertie-dtl-slider1.jpg" alt="">
+                                                            <img src="img/propertie-dtl-slider1.jpg" id="img3" alt="">
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                                         <div>
-                                                            <h3>Nike White black Shoes</h3>
+                                                            <h3 id="productName3">Nike White black Shoes</h3>
                                                         </div>
 
                                                         <div class="as-info clearfix">
@@ -183,7 +178,7 @@
                                                                 class="col-lg-6 col-md-6 col-sm-6 col-xs-12 border-right-a ">
 
 
-                                                                <input type="number" placeholder="quantity"
+                                                                <input type="number" placeholder="quantity" id="quantity3"
                                                                     name='quantity' min=1 max=10 style="width:100px">
                                                                 <h4>Sub Total</h4>
                                                                 <h2>$ 0</h2>
@@ -192,8 +187,8 @@
                                                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 ">
 
                                                                 <div class="text-right text-l">
-                                                                    <a href="view-order.html"
-                                                                        class="btn btn-default btn-small">Buy</a>
+                                                                    <a href="#"
+                                                                        class="btn btn-default btn-small" onclick="getDetails(this)">Buy</a>
                                                                 </div>
                                                                 <!-- <div
                                                                                                     class="text-right m-t-sm text-l">
@@ -229,7 +224,43 @@
     </div>
     </div>
 
-    <!-- <script src="js/jquery-2.1.1.js"></script> -->
-    <script src="js/bootstrap.min.js"></script>
+   
+    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    <script>
+      var product1Price = 200;
+      var product2Price = 4500;
+      var product3Price = 2500;
+      function getDetails(element){
+          let id = element.id;
+          let productUrl = $('#img'+id).attr('src');
+          let productQuantity = $('#quantity'+id).val();
+          let productName = $('#productName'+id).html();
+          console.log(id);
+          console.log(productUrl);
+          console.log(productQuantity);
+          console.log(productName);
+          let price = 0;
+          if(id === 1)
+          {
+            price = product1Price;
+          }else if(id === 2)
+          {
+            price = product2Price;
+          }else{
+            price = product3Price;
+          }
+          window.location = 'http://169.48.27.245/checkout_step_1?productImage='+productUrl+'&productName='+productName+'&quantity='+productQuantity+'&price='+price;
+       
+        //   $.ajax({
+        //       method : 'GET',
+        //       success : function (data){
 
+        //       },
+        //       error : function (data){
+
+        //       }
+        //   })
+     }
     </script>
+
